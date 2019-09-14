@@ -1,0 +1,135 @@
+Python is especially useful for doing math and can be used to automate many calculations. In this project, we'll create a calculator that can compute the area of the following shapes:
+
+Circle
+Triangle
+The program should do the following:
+
+Prompt the user to select a shape.
+Calculate the area of that shape.
+Print the area of that shape to the user.
+Let's begin!
+
+1.
+Begin by writing a multi-line comment that describes what this program does, starting on line 1.
+
+
+
+2.
+Let's inform the user that the program is running.
+
+Print a message to let the user know the calculator is starting up.
+
+
+
+3.
+Next, ask the user what shape to calculate the area of using raw_input(), which works like:
+
+name = raw_input("What's your name? ")
+Prompt the user for input with the following message: "Enter C for Circle or T for Triangle: ".
+
+Store their input into a variable called option.
+
+
+
+4.
+Great! Now it's time to calculate the area of the shape that the user specifies.
+
+Write an if statement that will check if the option the user entered is 'C' for circle.
+
+
+5.
+For the next few steps, we will be writing code inside the if statement.
+
+Prompt the user to input the radius.
+
+Store their input into a variable called radius.
+
+
+6.
+Using raw_input() alone will store the user's input as a string. Since we want to do some calculations with the user's input, we need numbers, not strings.
+
+Python has a built-in method called float() that converts a string to a floating point number.
+
+Put the raw_input("Enter radius: ") part of your code inside float() parenthesises like this:
+
+radius = float(raw_input("Enter radius: "))
+
+
+7.
+Calculate the area of a circle now that you have the radius.
+
+area = π r²
+
+Use 3.14159 for the value of pi.
+Use exponentiation ** to square.
+Store the result in a variable called area.
+
+8.
+Finally, on the next line, print the area using string formatting.
+
+
+
+9.
+You've completed the part of the program that calculates the area of a circle – it's a good time to test the code!
+
+First, click Save. Then, in the terminal, type the following command and press enter:
+
+python AreaCalculator.py
+
+
+
+
+
+10.
+Great! It's time to move on to the next shape: the triangle.
+
+Add a corresponding elif statement to your if statement.
+
+The elif statement should check if the option the user entered is 'T' for triangle.
+
+
+11.
+For the next few steps, you will be staying inside the elif statement.
+
+To calculate the area of a triangle, first ask the user to enter the base of the triangle.
+
+Store the user's input in a variable called base.
+
+Convert the user's input from a string to a number by using float().
+
+12.
+The height of the triangle is also needed to calculate its area.
+
+Ask the user to enter the height of the triangle and store the input in a variable called height.
+
+Convert the user's input from a string to a number by using float().
+
+13.
+Next, calculate the area and store it in a variable called area.
+
+area = ½ b h
+
+14.
+Finally, print the area using string formatting.
+
+15.
+Fantastic! The user can now specify C for circle or T for triangle.
+
+But what if the user enters something else?
+
+Add an else block to handle this possible case.
+
+Inside the else block, print a message to inform the user that they entered an invalid shape.
+
+16.
+Last line of the program!
+
+Outside of the if statement, inform the user that the program is exiting.
+
+17.
+Now we're ready to try the program out!
+
+First, click Save. Then, in the terminal, type the following command and press enter:
+
+python AreaCalculator.py
+Congratulations!
